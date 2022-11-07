@@ -19,6 +19,20 @@
 
     <header>
       <h1><?php echo 'hello  ', retname(); ?></h1>
-    </header>
+      </header>
+      <ul>
+        <?php foreach($names as $name) :?>
+        <li><?=$name ?></li>
+        <?php endforeach?>
+      </ul>
+      <ul>
+        <?php foreach($animals as $animal) :?>
+         <li> <strong> <?= $animal?></strong></li>
+          <?php endforeach ?>
+      </ul>
+      <ul>
+        <?php $carsHTML ?>
+      </ul>
+    
   </body>
 </html>

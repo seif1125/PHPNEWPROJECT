@@ -4,6 +4,15 @@
   else{
     return 'guest';
   }}
-  $title='document'  ; 
+  $title='document'  ;
+  $names=['Seif','Mostafa','Ahmed'];
+  $cars=['sunny','xv'];
+  $animals=['rat','cat','dog'];
+   $carsHTML='';
+   foreach ($cars as $car) {
+   echo  '<li>' . $car . '</li>';
+      
+   }
+   
   require'index.view.php'
   ?>
