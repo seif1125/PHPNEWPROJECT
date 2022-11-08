@@ -1,11 +1,6 @@
 <?php $title='php';
-$x='';
-function retname(){ if(isset($_GET['name'])){
-    return htmlspecialchars($_GET['name']);
-  }
-  else{
-    return 'guest';
-  }};
+require 'functions.php';
+
 $user=[
   '0'=>[
     'user_name'=>'seif'
@@ -27,8 +22,8 @@ $user=[
   
   ];
 
-
-
+  $a = (int)readline('Enter an integer: ');
+  die(eligibleAge($a));
    
   require'index.view.php'
   ?>
