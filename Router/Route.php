@@ -3,20 +3,29 @@
 /**
  * undocumented class
  */
-$routesArray= require('routes.php');
+ require('routes.php');
 class Route 
 {
-    public $routes ;
+    public $routes=[
+        
+            '/'=>'/Controllers/index.php',
+            '/about'=>'Controllers/about.php',
+            '/contact'=>'/Controllers/contact.php',
+     
+    ];
     public function __construct()
     {
-        $this->routes=$routesArray;
+      #echo var_dump($this->routes);
+      
+    
     }
 
     public function loaduri($controller){
-        if(key_exists($controller,$routes)){
-            
-            return $routes[$controller];
-        }
+       
+            require $this->routes[$controller];
+           // echo trim($controller,'/').'      ';
+            echo 'fg';
+        
 
     }
 

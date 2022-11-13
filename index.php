@@ -1,6 +1,8 @@
 <?php 
+ require('Router/Route.php');
+ $route= new Route();
 
- require('Views/index.view.php');
+ $route->loaduri(($_SERVER['REQUEST_URI']));
  
 
 

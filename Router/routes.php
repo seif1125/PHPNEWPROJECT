@@ -1,7 +1,8 @@
 <?php
-return $routes=[
-       ''=>'/',
-       'about'=>'/about',
-       'contact'=>'/contact',
+$routes=[
+       '/'=>'/Controllers/index.php',
+       '/about'=>'/Controllers/about.php',
+       '/contact'=>'/Controllers/contact.php',
 ];
+
 ?>
