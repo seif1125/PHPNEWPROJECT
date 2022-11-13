@@ -3,19 +3,18 @@
 /**
  * undocumented class
  */
- require('routes.php');
+ 
 class Route 
 {
-    public $routes=[
-        
-            '/'=>'/Controllers/index.php',
-            '/about'=>'Controllers/about.php',
-            '/contact'=>'/Controllers/contact.php',
-     
-    ];
+    public $routes;
     public function __construct()
     {
-      #echo var_dump($this->routes);
+        $this->routes=[
+            '/'=>'/Controllers/index.php',
+            '/about'=>'/Controllers/about.php',
+            '/contact'=>'/Controllers/contact.php',
+     ];
+     
       
     
     }
@@ -24,7 +23,7 @@ class Route
        
             require $this->routes[$controller];
            // echo trim($controller,'/').'      ';
-            echo 'fg';
+           
         
 
     }
