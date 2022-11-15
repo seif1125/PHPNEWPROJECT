@@ -19,7 +19,9 @@
 
     <header>
       <ul>
-        <li ><a href='about'>about</a></li>
+        <li ><a href='home'>about</a></li>
+        <li ><a href='contact'>about</a></li>
+        <li ><a href='name'>about</a></li>
       </ul>
       <h1><?php echo 'hello  home  ' ?></h1>
       </header>
